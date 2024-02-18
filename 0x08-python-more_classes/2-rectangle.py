@@ -41,3 +41,14 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
+
+    def area(self):
+        """Returnns area of Rectangle."""
+        return (self.__height * self.__width)
+
+    def perimeter(self):
+        """Calculates Perimeter of the Rectangle."""
+
+        if self.__height == 0 or self.__width == 0:
+            return (0)
+        return ((self.__width + self.__height) * 2)
