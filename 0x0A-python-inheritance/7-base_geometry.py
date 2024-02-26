@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Defines a base geometry class BaseGeometry."""
 
+
 class BaseGeometry:
-    """Represents base geometry."""
+    """Reprsent base geometry."""
 
     def area(self):
         """Not yet implemented."""
@@ -18,7 +19,6 @@ class BaseGeometry:
             TypeError: If value is not an integer.
             ValueError: If value is <= 0.
         """
-
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
