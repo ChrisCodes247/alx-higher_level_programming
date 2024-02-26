@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Model a rectangle."""
+Base = __import__('Base').Base
 
 class Rectangle(Base):
     """Modles a rectangle and inherits from base class.
