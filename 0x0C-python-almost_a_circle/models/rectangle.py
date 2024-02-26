@@ -25,61 +25,38 @@ class Rectangle(Base):
         self.__y = y
         super().__init__(id)
 
-        @property
-        """width getter method."""
+        @property 
         def width(self):
+            """Set/get the width of the Rectangle."""
             return (self.__width)
 
         @property
-        """height getter"""
         def height(self):
+            """Set/get the height of the Rectangle."""
             return (self.__height)
 
         @property
-        """x getter method."""
         def x(self):
+            """Set/get the x of the Rectangle."""
             return (self.__x)
 
         @property
-        """y getter."""
         def y(self):
+            """Set/get the y of the Rectangle."""
             return (self.__y)
 
         @width.setter
-        """Width setter.
-
-        Args:
-            value (int): width will be set to this value
-        """
         def width(self, value):
             self.__width = value
 
-        @height.setter
-        """height setter.
-
-        Args:
-            value (int): height will be set to this value
-        """
-
+        @height.setter       
         def height(self, value):
             self.__height = value
 
-        @x.setter
-        """x setter.
-
-        Args:
-            value (int): x will be set to this value
-        """
-
+        @x.setter       
         def x(self, value):
             self.__x = value
 
         @y.setter
-        """y setter.
-
-        Args:
-            value (int): y will be set to this value
-        """
-
         def y(self, value):
             self.__y = value
