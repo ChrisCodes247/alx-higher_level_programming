@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Model a rectangle."""
-Base = __import__('Base').Base
+from models.base import Base
 
 class Rectangle(Base):
     """Modles a rectangle and inherits from base class.
@@ -23,7 +23,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        super().__init__.(id)
+        super().__init__(id)
 
         @property
         """width getter method."""
