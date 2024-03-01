@@ -1,26 +1,23 @@
 #!/usr/bin/python3
-"""Class square that inherits from Rectangle."""
+# square.py
+# Brennan D Baraban <375@holbertonschool.com>
+"""Defines a square class."""
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
-    """Models a Square."""
+    """Represent a square."""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Class constructor.
+        """Initialize a new Square.
 
         Args:
-            size (int): size of the square
-            x (int): the x coordinate of the square
-            y (int): the y coordinate of the square
-            id (int): unique counter for class objects
-
+            size (int): The size of the new Square.
+            x (int): The x coordinate of the new Square.
+            y (int): The y coordinate of the new Square.
+            id (int): The identity of the new Square.
         """
-        super().__init__(id, x, y, width, height)
-
-    def __str__(self):
-    """Return the print() and str() representation of a Square."""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
-                                             self.width)
+        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
@@ -81,3 +78,8 @@ class Square(Rectangle):
             "x": self.x,
             "y": self.y
         }
+
+    def __str__(self):
+        """Return the print() and str() representation of a Square."""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width)
