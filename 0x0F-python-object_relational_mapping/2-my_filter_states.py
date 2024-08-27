@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     search_name = sys.argv[4]
     
-    cursor.execute("SELECT * FROM states WHERE name=search_name ORDER BY states.id ASC")
+    cursor.execute("SELECT * FROM states WHERE name='{}' ORDER BY states.id ASC".format(search_name))
 
     data = cursor.fetchall()
 
