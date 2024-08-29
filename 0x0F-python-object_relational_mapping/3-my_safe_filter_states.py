@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     query = "SELECT * FROM states WHERE name=%s ORDER BY id ASC"
     
-    cursor.execute(quwry, (search_name,))
+    cursor.execute(query, (search_name,))
 
     data = cursor.fetchall()
 
