@@ -2,6 +2,7 @@
 # Defines a State model
 # Inherits from SQLAlchemy Base and links to the MySQL table states
 
+import sqlalchemy
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -15,5 +16,5 @@ class State(Base):
     name (sqlalchemy.String): The state's name.
     """
     __tablename__ = 'states'
-    id = Column(Integer, primary_key = True, nullable=False, autoincrement=True)
+    id = Column(Integer(11), primary_key = True, autoincrement=True)
     name = Column(String(128), nullable=False)
